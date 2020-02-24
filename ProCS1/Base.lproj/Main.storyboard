@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zB1-dE-4De">
+                                <rect key="frame" x="132.5" y="70" width="110" height="30"/>
+                                <state key="normal" title="Expand Number"/>
+                                <connections>
+                                    <action selector="btnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mtc-f5-beS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jqg-P7-UrY">
+                                <rect key="frame" x="138" y="120" width="99" height="30"/>
+                                <state key="normal" title="Prime Number"/>
+                                <connections>
+                                    <action selector="btnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OHh-ux-81J"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bgz-9d-sbZ">
+                                <rect key="frame" x="93" y="170" width="189" height="30"/>
+                                <state key="normal" title="Stringify Object for Graphql"/>
+                                <connections>
+                                    <action selector="btnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8U1-IX-itS"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6h4-U2-QFx">
+                                <rect key="frame" x="16" y="240" width="343" height="411"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zB1-dE-4De" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="1Kq-oR-yW8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6h4-U2-QFx" secondAttribute="bottom" constant="16" id="6E9-n4-zu3"/>
+                            <constraint firstItem="jqg-P7-UrY" firstAttribute="centerX" secondItem="zB1-dE-4De" secondAttribute="centerX" id="FHD-mJ-Lwn"/>
+                            <constraint firstItem="Bgz-9d-sbZ" firstAttribute="centerX" secondItem="jqg-P7-UrY" secondAttribute="centerX" id="FOn-ME-mE4"/>
+                            <constraint firstItem="jqg-P7-UrY" firstAttribute="top" secondItem="zB1-dE-4De" secondAttribute="bottom" constant="20" id="HNm-i9-JXo"/>
+                            <constraint firstItem="6h4-U2-QFx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="PFv-DD-tSI"/>
+                            <constraint firstItem="Bgz-9d-sbZ" firstAttribute="top" secondItem="jqg-P7-UrY" secondAttribute="bottom" constant="20" id="R0Y-rF-1Jc"/>
+                            <constraint firstItem="zB1-dE-4De" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Tgv-YI-XLs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6h4-U2-QFx" secondAttribute="trailing" constant="16" id="mbw-KS-5Fm"/>
+                            <constraint firstItem="6h4-U2-QFx" firstAttribute="top" secondItem="Bgz-9d-sbZ" secondAttribute="bottom" constant="40" id="rML-PS-BPZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="txtMsg" destination="6h4-U2-QFx" id="7bi-GL-R6l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141.59999999999999" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
